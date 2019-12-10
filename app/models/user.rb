@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 	attr_accessor :remember_token
+	has_many :microposts,dependent: :destroy
 	
 	validates :name,presence: true, length: {maximum: 50}
 	validates :email,presence: true, length: {maximum: 255},uniqueness: true
@@ -27,5 +28,9 @@ class User < ApplicationRecord
 		
 	def forget
 		update_attribute(:remember_digest,nil)
+	end
+	
+	def feed
+		microposts
 	end
 end

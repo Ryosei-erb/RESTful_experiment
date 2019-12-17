@@ -2,7 +2,7 @@
   <% if logged_in? %>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="/"><em>Chat</em></a>
+        <a class="navbar-brand" href="/"><em>Post it</em></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navabr-content"
         aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -13,20 +13,15 @@
             <li class="nav-item ">
               <%= link_to "Users",users_path,class:"nav-link" %>
             </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <%= link_to "Profile",current_user,class:"dropdown-item" %>
-                <%= link_to "Setting",edit_user_path(current_user),class:"dropdown-item" %>
-                <%= button_to "Log out",logout_path,method: :delete, class:"dropdown-item"  %>
-              </div>
+            <li class="nav-item">
+               <%= link_to "Profile",current_user,class:"nav-link" %>
             </li>
-          </ul>
-          
-          <ul class="navbar-nav">
-          	
+            <li class="nav-item">
+              <%= link_to "Setting",edit_user_path(current_user),class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Log out",logout_path,method: :delete, class:"nav-link"  %>
+            </li>
           </ul>
         </div>
       </div>
@@ -35,7 +30,7 @@
   <% else %>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class="container">
-        <a class="navbar-brand btn" href="/">Chat</a>
+        <a class="navbar-brand btn" href="/">Post it</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navabr-content"
         aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

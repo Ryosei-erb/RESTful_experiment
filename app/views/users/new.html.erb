@@ -1,22 +1,25 @@
 <% provide(:title,"Sign up") %>
-<h1>Sign up</h1>
+<h2 class="login">Sign up</h2>
 
-<div>
-	<%= form_for(@user) do |f| %>
-	<%= render "shared/error_messages", object:f.object %>
-		<%= f.label :name %>
-		<%= f.text_field :name %>
+<div class="container">
+	<div class="row mb-4">
+		<div class="login">
+			<%= form_for(@user) do |f| %>
+				<%= render "shared/error_messages", object:f.object %>
+				<%= f.label :name %>
+				<%= f.text_field :name %>
+				
+		    <%= f.label :email %>
+				<%= f.email_field :email %>
+				
+				<%= f.label :password %>
+				<%= f.password_field :password %>
+				
+				<%= f.label :password , "Password (again)" %>
+				<%= f.password_field :password_confirmation %>
 		
-		<%= f.label :email %>
-		<%= f.email_field :email %>
-		
-		<%= f.label :password %>
-		<%= f.password_field :password %>
-		
-		<%= f.label :password_confirmation, "Confirmation" %>
-		<%= f.password_field :password_confirmation %>
-		
-		<%= f.submit "Create my account",class:"btn" %>
-		<% end %>
-	
+				<%= f.submit "Create ",class:"form" %>
+			<% end %>
+		</div>
+	</div>
 </div>

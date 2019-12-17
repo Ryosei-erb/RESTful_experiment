@@ -1,7 +1,10 @@
 <% provide(:title,"Log in") %>
-<h1>Log in</h1>
+<section class="login">
+	<h2 class="login">Log in</h2>
+</section>
 
-<div>
+
+<div class="login">
 	<%= form_for(:session,url: login_url) do |f| %>
 		<%= f.label :email %>
 		<%= f.email_field :email %>
@@ -14,9 +17,9 @@
 		<span>Remeber me on this computer</span>
 		<% end %>
 		
-		<%= f.submit "Log in", class:"btn" %>
+		<%= f.submit "Log in", class:"form" %>
 	<% end %>
 	
-	<p>New user? <%=link_to "Sign up ",signup_path %></p>
+	<div>New user? <%=link_to "Sign up ",signup_path %></div>
 	
 </div>

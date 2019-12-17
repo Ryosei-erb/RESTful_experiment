@@ -1,3 +1,49 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#home h1 {
+  font-size: 100px;
+  line-height: 1;
+  color: #ffffff;
+  font-family: "Bitter",serif;
+  margin-bottom: 50px;
+}
+
+#home .content {
+  margin-top: 150px;
+}
+
+#home p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.btn a {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Bitter",serif;
+  width: 185px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #009cd3;
+}
+
+#home footer {
+  width: 960px;
+  margin: 150px auto 0 auto;
+  text-align: left;
+  
+}
+
+#home {
+  background-image: url(../images/bg-index.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}

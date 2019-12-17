@@ -1,6 +1,7 @@
 <li>
-	<%= link_to user.name, user %>
+	<%= link_to user.name, user,class:"link" %>
 	<% if current_user.admin? %>
 		| <%= link_to "delete",user,method: :delete,data: { confirm: "Are you sure?"} %>
 	<% end %>
 </li>
+

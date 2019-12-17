@@ -1,0 +1,60 @@
+<!-- ログインした状態のナビゲーションバー -->
+  <% if logged_in? %>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><em>Chat</em></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navabr-content"
+        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <%= link_to "Users",users_path,class:"nav-link" %>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <%= link_to "Profile",current_user,class:"dropdown-item" %>
+                <%= link_to "Setting",edit_user_path(current_user),class:"dropdown-item" %>
+                <%= button_to "Log out",logout_path,method: :delete, class:"dropdown-item"  %>
+              </div>
+            </li>
+          </ul>
+          
+          <ul class="navbar-nav">
+          	
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--ログアウト状態のナビバー -->
+  <% else %>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand btn" href="/">Chat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navabr-content"
+        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item ">
+              <%= link_to "Sign up",signup_path,class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Log in",login_url,class:"nav-link" %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    
+  
+  <% end %>

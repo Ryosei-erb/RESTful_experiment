@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.6'
+gem 'bootstrap' , '4.0.0'
 gem 'bcrypt',         '3.1.12'
 gem 'carrierwave',   '1.2.2'
 gem 'mini_magick',  '4.7.0'
@@ -11,6 +12,7 @@ gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

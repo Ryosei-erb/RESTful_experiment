@@ -3,27 +3,26 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
-
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet">
   </head>
 
   <body>
+  <%= render "shared/header" %>
+    
     <% flash.each do |message_type,message| %>
       <%=message_type %><%=message%>
     <% end %>
-    <% if logged_in? %>
-    <li><%= link_to "Home",root_url %></li>
-    <li><%= link_to "Users",users_path %></li>
-    <li><%= link_to "Profile",current_user %></li>
-    <li><%= link_to "Setting",edit_user_path(current_user) %></li>
-    <li><%= link_to "Log out",logout_path, method: :delete %></li>
-    <% else %>
-    <li><%= link_to "Home",root_url %></li>
-    <li><%= link_to"Sign Up",signup_path %></li>
-    <li><%= link_to"Log in",login_url %></li>
-    <% end %>
-    <%= yield %>
-    <%= debug(params) if Rails.env.development? %>
+    
+   <div class="container">
+     <%= yield %>
+   </div>
+   <footer>
+     <small><%= "(C)2019 Made by Ryosei Yoshikawa" %></small>
+   </footer>
+    
+  <%= debug(params) if Rails.env.development? %>
   </body>
 </html>

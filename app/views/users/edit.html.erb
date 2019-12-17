@@ -1,7 +1,7 @@
 <% provide(:title,"Edit user") %>
-<h1>Update your profile</h1>
+<h2 class="login">個人情報を編集</h2>
 
-<div>
+<div class="login">
 	<%= form_for(@user) do|f| %>
 	<%= render "shared/error_messages",object:f.object%>
 	
@@ -14,10 +14,10 @@
 	<%= f.label :password %>
 	<%= f.password_field :password %>
 	
-	<%= f.label :password_confirmation ,"Confirmation" %>
+	<%= f.label :password_confirmation ,"Password (again)" %>
 	<%= f.password_field :password_cofirmation %>
 	
-	<%= f.submit "Save changes",class:"btn" %>
+	<%= f.submit "Save changes",class:"form" %>
 	<% end %>
 	
 	

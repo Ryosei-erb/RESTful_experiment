@@ -1,0 +1,186 @@
+@import "bootstrap";
+@import "font-awesome";
+
+input,textarea {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #cccccc;
+	color: #333333;
+	font-size: 15px;
+	line-height: 2;
+	
+}
+
+header {
+	width : 960px;
+	height: 100px;
+}
+
+footer {
+	text-align: center;
+	color: #ffffff;
+	padding: 20px 0;
+}
+
+footer small {
+	font-size: 12px;
+}
+
+.navbar  {
+	font-family: "Bitter", serif;
+}
+
+ 
+h1 {
+	font-size: 100px;
+	line-height : 1;
+	color: #ffffff;
+	font-family: "Bitter", serif;
+	margin-bottom: 50px;
+}
+
+.content {
+	margin-top: 150px;
+}
+
+p {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.btn a {
+	background-color: #009cd3;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: "Biffer", serif;
+	width: 185px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 3px solid #009cd3;
+	
+}
+
+.btn a:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #009cd3;
+}
+
+.login {
+	margin-top: 15px;
+	color: #ffffff;
+	font-family: "Bitter",serif;
+}
+
+.form {
+	background-color: #009cd3;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: "Biffer", serif;
+	width: 185px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 3px solid #009cd3;
+}
+
+.form:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #009cd3;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.index {
+	font-size: 20px;
+	list-style: none;
+	color: #ffffff;
+}
+
+.index:hover {
+	text-decoration: none;
+}
+
+.link {
+	color: #ffffff;
+	font-family: "Biffer", serif;
+}
+
+.link:hover {
+	border-bottom: 2px solid #ffffff;
+	padding-bottom: 3px
+}
+
+.micropost {
+	margin-bottom: 15px;
+	color: #ffffff;
+	font-family: "Bitter",serif;
+	text-align: center;
+	
+}
+
+.micro {
+	list-style: none;
+}
+
+.count {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+hr {
+	height: 1px;
+	border: none;
+	border-bottom: 1px #ffffff solid;
+}
+
+.del  {
+	background-color: #CE1139;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: "Biffer", serif;
+	width: 185px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	margin-left: 450px;
+	border-radius: 5px;
+	border: 3px solid #CE1139;
+}
+
+.del:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #CE1139;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+
+
